@@ -68,7 +68,6 @@ body {
   align-items: center; /* 세로 방향 중앙 정렬 */
   margin-top: 5%;
   margin-bottom: 5%;
-  padding: 2rem 0;
   padding: 2rem 10rem;
 }
 .profile-text {
