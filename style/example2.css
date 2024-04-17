@@ -1,0 +1,37 @@
+span,
+div {
+  background-color: yellow;
+  border: 1px solid red;
+}
+
+div.container {
+  background-color: skyblue;
+  position: relative;
+  right: 5px;
+}
+.top {
+  position: relative;
+  top: 5px;
+  z-index: 1;
+}
+
+.right {
+  position: relative;
+  right: 5px;
+}
+
+.bottom {
+  position: relative;
+  bottom: 5px;
+}
+
+.left {
+  position: relative;
+  left: 5px;
+}
+
+.space-between {
+  position: relative;
+  left: 10px;
+  right: 5px;
+}
