@@ -54,6 +54,10 @@ body {
   cursor: pointer;
 }
 
+.main-nav {
+  padding-left: 35%;
+}
+
 .social-icons img {
   margin-left: 0.5rem;
   width: 20px;
