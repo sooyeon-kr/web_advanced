@@ -164,6 +164,34 @@ body {
   margin-top: 1%;
   margin-bottom: 1%;
 }
+.contact-info-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-info-nav .nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.contact-info-nav .nav-item {
+  padding: 0 1rem;
+  color: #333;
+  font-weight: 450;
+  cursor: pointer;
+}
+
+.footer-nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.footer-nav .nav-item {
+  padding: 0 1rem;
+  color: #333;
+  font-weight: 450;
+  cursor: pointer;
+}
 
 .contact-info {
   color: #333;
