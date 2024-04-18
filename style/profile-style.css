@@ -1,22 +1,233 @@
-.logo {
-  display: inline-block;
-  padding-left: 160px;
-  padding-right: 270px;
-}
-.nav-items {
-  display: inline-block;
-}
-.nav-items div {
-  display: inline-block;
-  padding: 0 32px;
-}
-.nav-links {
-  display: inline-block;
+body {
+  max-width: 1228px;
+  margin: 0 auto;
   padding: 0 20px;
 }
-.nav-links #github {
+
+.top-nav {
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+
+.top-logo {
+  width: 97px;
+  height: 59px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-items li {
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.nav-items li a {
+  color: #42446e;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+  text-decoration-line: none;
+}
+
+.top-sns {
+  display: flex;
+  gap: 20;
+  align-items: center;
+}
+
+.top-sns img {
   width: 30px;
   height: 30px;
-  background-repeat: no-repeat;
-  background-image: url(./web_advanced/portfolio/src/profile/git.svg);
+}
+
+/* 헤더 */
+header {
+  padding-top: 220px;
+  padding-bottom: 300px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #42446e;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
+}
+
+header h1 span {
+  background: linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+/* 공통 텍스트 */
+.section-text {
+  padding-bottom: 130px;
+}
+.section-text h2 {
+  color: #42446e;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.section-text p {
+  color: #666;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
+/* 기술 섹션 */
+.tech-stacks {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.tech-stacks li {
+  text-align: center;
+}
+
+#tech-stack {
+  padding-bottom: 300;
+}
+
+/* 프로젝트 섹션 */
+#project-section {
+  padding-bottom: 300px;
+}
+.project-items {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.project-item {
+  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.project-thumbnail {
+  width: 100%;
+  height: 256px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: url("https://source.unsplash.com/random/400x400");
+  background-position: center;
+  background-size: cover;
+}
+.project-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.project-content h4 {
+  color: #42446e;
+  font-size: 24px;
+  font-weight: 700;
+}
+.project-link a {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration-line: underline;
+}
+.project-desc {
+  color: #666;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.project-tech-stack {
+  color: #42446e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  padding-bottom: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 97px;
+  height: 59px;
+}
+
+.footer-contact {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  color: #42446e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.footer-contact a {
+  color: #42446e;
+  text-decoration: none;
+}
+
+footer .footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.hr {
+  width: 100%;
+  border-bottom: solid 1px #666;
+}
+
+.madeby {
+  color: #666;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.madeby span {
+  background: linear-gradient(0deg, #13b0f5 -2.06%, #e70faa 100%);
+  background-clip: text;
+  color: transparent;
 }

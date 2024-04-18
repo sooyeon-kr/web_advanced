@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>child</title>
+    <link rel="stylesheet" href="./common.css" />
+    <style>
+      .holiday:first-child {
+        color: red;
+      }
+      .holiday:first-letter {
+        font-size: 60px;
+      }
+      .please:first-line {
+        color: yellowgreen;
+      }
+      .holiday:first-child::before {
+        content: ":)";
+      }
+      .holiday:nth-child(3) {
+        content: "이에요";
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>[nth-child]</div>
+    <div>
+      <div class="holiday">5월은 빨간날이 많다</div>
+      <div class="holiday">5월 1일</div>
+      <div class="holiday">5월 6일</div>
+      <div class="holiday">5월 15일</div>
+      <div class="holiday">진짜 진짜 더 많았으면 좋겠다.</div>
+      <div class="please">
+        따로 공부할 수 있는 날도 더 많았으면 좋겠다. 정리할 시간이 조금 부족한
+        것 같다. 힝구다. 시간이 너무너무너무너무너무 빠르다;-;
+      </div>
+    </div>
+  </body>
+</html>
