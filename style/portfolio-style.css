@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 body {
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Do Hyeon";
   max-width: 1228px;
   margin: 0 auto;
   padding: 0 20px;
