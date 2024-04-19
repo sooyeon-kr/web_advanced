@@ -31,6 +31,15 @@ body {
   width: 50px;
   height: 50px;
 }
+@media (max-width: 768px) {
+  .top-nav {
+    padding: 20px 10px;
+  }
+  .top-logo {
+    width: 45px;
+    height: 45px;
+  }
+}
 
 .nav-items {
   display: flex;
@@ -38,32 +47,47 @@ body {
   align-items: center;
   gap: 50px;
 }
+.nav-items.mobile {
+  display: none;
+}
 
 .nav-items li {
-  color: #42446e;
+  color: #666;
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
 }
 
 .nav-items li a {
-  color: #42446e;
-
-  font-style: normal;
-  font-weight: 500;
-  line-height: 50px;
+  /* color: #42446e; */
+  /* font-style: normal; */
+  /* font-weight: 500; */
+  /* line-height: 26px; */
   text-decoration-line: none;
 }
-
 .top-sns {
   display: flex;
-  gap: 20;
+  gap: 20px;
   align-items: center;
 }
 
 .top-sns img {
   width: 30px;
   height: 30px;
+}
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+  .nav-items.mobile {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    justify-content: flex-start;
+  }
+  .nav-items li {
+    font-size: 16px;
+  }
 }
 
 /* 헤더 */
@@ -101,6 +125,25 @@ header img {
   width: 300px;
   height: 300px;
 }
+
+@media (max-width: 768px) {
+  header {
+    padding-top: 68px;
+    padding-bottom: 160px;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  header h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 150%;
+  }
+  header img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 /* 공통 텍스트 */
 .section-text {
   padding-bottom: 130px;
@@ -120,6 +163,18 @@ header img {
   font-style: normal;
   font-weight: 400;
 }
+@media (max-width: 768px) {
+  .section-text {
+    padding-bottom: 24px;
+  }
+  .section-text h2 {
+    font-size: 28px;
+    padding-bottom: 8px;
+  }
+  .section-text p {
+    font-size: 14px;
+  }
+}
 /* 기술 섹션 */
 .tech-stacks {
   display: flex;
@@ -132,6 +187,17 @@ header img {
 
 #tech-stack {
   padding-bottom: 300;
+}
+
+@media (max-width: 768px) {
+  .tech-stacks {
+    gap: 8px;
+    justify-content: flex-start;
+  }
+  .tech-stacks img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 /* 프로젝트 섹션 */
