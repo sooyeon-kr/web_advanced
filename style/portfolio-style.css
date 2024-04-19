@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 body {
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Do Hyeon";
   max-width: 1228px;
   margin: 0 auto;
   padding: 0 20px;
@@ -55,12 +58,18 @@ body {
 header {
   padding-top: 220px;
   padding-bottom: 300px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+header h2 {
+  color: #42446e;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
+}
 header h1 {
   color: #42446e;
   font-size: 58px;
@@ -71,11 +80,15 @@ header h1 {
 }
 
 header h1 span {
-  background: linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
+  background: linear-gradient(90deg, #ffc3b1 -2.06%, #fb8d6a 100%);
   background-clip: text;
   color: transparent;
 }
 
+header img {
+  width: 300px;
+  height: 300px;
+}
 /* 공통 텍스트 */
 .section-text {
   padding-bottom: 130px;
@@ -233,7 +246,7 @@ footer .footer-links {
 }
 
 .madeby span {
-  background: linear-gradient(0deg, #13b0f5 -2.06%, #e70faa 100%);
+  background: linear-gradient(0deg, #ffc3b1 -2.06%, #fedea3 100% 100%);
   background-clip: text;
   color: transparent;
 }
