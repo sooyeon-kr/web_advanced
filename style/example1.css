@@ -1,0 +1,16 @@
+#id {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.description {
+  color: gray;
+}
+
+p {
+  font-style: italic;
+}
+
+div p {
+  color: red;
+}

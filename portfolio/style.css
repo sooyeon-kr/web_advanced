@@ -1,0 +1,207 @@
+/* Reset some default styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding-top: 50px; /* space for the fixed header */
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+/* Header styles */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  color: #0077cc;
+  font-size: 1.5rem;
+}
+
+.main-nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav .nav-item {
+  padding: 0 1rem;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main-nav {
+  padding-left: 35%;
+}
+
+.social-icons img {
+  margin-left: 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+
+/* Intro section styles */
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center; /* 세로 방향 중앙 정렬 */
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2rem 10rem;
+}
+.profile-text {
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  text-align: justify;
+}
+.greeting {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #0077cc;
+}
+
+.intro-text {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  /* border: 4px solid #0077cc; */
+  padding: 7px;
+}
+
+/* Tech Stack section styles */
+.tech-stack {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.tech-stack h2 {
+  color: #0077cc;
+  margin-bottom: 0.5rem;
+}
+.stack-images {
+  padding: 5%;
+}
+.stack-images img {
+  width: 50px;
+  margin: 0.5rem;
+}
+
+/* Projects section styles */
+.projects-section {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.projects-section h2 {
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+.projects-grid {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer styles */
+.footer {
+  /* background-color: #0077cc; */
+  /* color: #fff; */
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.contact-info-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-info-nav .nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.contact-info-nav .nav-item {
+  padding: 0 1rem;
+  color: #333;
+  font-weight: 450;
+  cursor: pointer;
+}
+
+.footer-nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.footer-nav .nav-item {
+  padding: 0 1rem;
+  color: #333;
+  font-weight: 450;
+  cursor: pointer;
+}
+
+.contact-info {
+  color: #333;
+}
+.copywriter-info {
+  color: #333;
+}
+
+.social-icons img {
+  margin: 0 0.3rem;
+  width: 24px;
+  height: 24px;
+}
