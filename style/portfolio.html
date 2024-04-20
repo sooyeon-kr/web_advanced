@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>포트폴리오</title>
 
-    <link rel="stylesheet" href="profile-reset.css" />
-    <link rel="stylesheet" href="profile-style.css" />
-
     <link rel="stylesheet" href="portfolio-reset.css" />
     <link rel="stylesheet" href="portfolio-style.css" />
   </head>
@@ -25,23 +22,37 @@
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+
       <!-- SNS Link -->
       <div class="top-sns">
         <a href="https://www.github.com/sooyeon-kr" target="_blank"
           ><img src="./src/profile/git.svg" alt="github"
         /></a>
-        <a href="#"><img src="./src/profile/twitter.svg" alt="twitter" /></a>
+        <a href="https://mygoodplace.tistory.com/"
+          ><img src="./src/profile/tistory.svg" alt="tistory"
+        /></a>
         <a href="https://www.linkedin.com/in/sooyeonoh7027/" target="_blank"
           ><img src="./src/profile/linkedIn.svg" alt="linkedIn"
         /></a>
       </div>
+
+      <ul class="nav-items mobile">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Tech Stack</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
     <!-- 내 소개 -->
     <header>
       <h1>
-        함께, 빠르게<br />
-        성장하고 싶은 개발자 <br />
-        <span>오수연</span>입니다.<br />
+        <p>안녕하세요👋🏻</p>
+        <span>같이</span>의 <span>가치</span>를 알고<br />
+        <span>즐겁게 성장</span>하고 싶은 <span>개발자</span> <br />
+        <span id="header_txt">오수연</span>입니다.<br />
       </h1>
       <img src="./src/profile/logo_sy.jpg" alt="profile" />
     </header>
@@ -136,20 +147,31 @@
     <footer>
       <div class="footer-upper">
         <!-- 로고 -->
-        <img src="" alt="" />
+        <img
+          class="footer-logo"
+          src="./src/profile/logo_sy.jpg"
+          alt="my_logo"
+        />
         <!-- 이메일/연락처/SNS -->
         <div class="footer-content">
           <div class="footer-contact">
-            <a href="tel:+01096087027">010-9608-7027</a>
+            <a class="tel" href="tel:+01096087027">010-9608-7027</a>
+            <a class="email" href="mailto:sooyeon7027@naver.com"
+              >sooyeon7027@naver.com</a
+            >
             <div class="footer-links">
               <a href="https://github.com/sooyeon-kr" target="_blank">
-                <img src="./src/profile/git.svg" alt="github" />
+                <img class="sns-img" src="./src/profile/git.svg" alt="github" />
               </a>
               <a
                 href="https://www.linkedin.com/in/sooyeonoh7027/"
                 target="_blank"
               >
-                <img src="./src/profile/linkedIn.svg" alt="linkedin" />
+                <img
+                  class="sns-img"
+                  src="./src/profile/linkedIn.svg"
+                  alt="linkedin"
+                />
               </a>
             </div>
           </div>
@@ -158,7 +180,8 @@
       <!-- 가로선 -->
       <div class="hr"></div>
       <div class="madeby">
-        Designed and built by Pavan <span>MG</span> with <span>Love</span> &
+        Designed and built <span class="br"></span>by Pavan <span>MG</span> with
+        <span>Love</span> &
         <span>Coffee</span>
         &copy; 2024
       </div>
