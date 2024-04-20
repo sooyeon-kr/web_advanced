@@ -25,21 +25,22 @@ body {
   padding: 40px 10px;
   display: flex;
   justify-content: space-between;
-
   flex-wrap: wrap;
+
 }
 
 .top-logo {
-  width: 50px;
-  height: 50px;
+  width: 61px;
+  height: 61px;
 }
+
 @media (max-width: 768px) {
   .top-nav {
     padding: 20px 10px;
   }
   .top-logo {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -54,25 +55,17 @@ body {
 }
 
 .nav-items li {
-  color: #666;
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
 }
 
 .nav-items li a {
-  /* color: #42446e; */
-  /* font-style: normal; */
-  /* font-weight: 500; */
-  /* line-height: 26px; */
   text-decoration-line: none;
   color: #474745;
 }
 
-.top-sns img {
-  width: 30px;
-  height: 30px;
-}
+
 @media (max-width: 768px) {
   .nav-items {
     display: none;
@@ -80,13 +73,28 @@ body {
   .nav-items.mobile {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 12px;
+    row-gap: 14px;
+    column-gap: 14px;
     justify-content: flex-start;
   }
   .nav-items li {
     font-size: 16px;
   }
 }
+
+.top-sns {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .top-sns img {
+    width: 30px;
+    height: 30px;
+  }
+  path {
+    fill: #666;
+  }
 
 /* 헤더 */
 header {
@@ -96,21 +104,12 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header h2 {
-  color: #42446e;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 70px;
-  letter-spacing: -1px;
-}
+
 header h1 {
-  color: #42446e;
   font-size: 58px;
-  font-style: normal;
   font-weight: 700;
   line-height: 70px;
-  letter-spacing: -1px;
+  letter-spacing: 0.5px;
 }
 
 header h1 span {
@@ -155,7 +154,6 @@ header img {
   padding-bottom: 130px;
 }
 .section-text h2 {
-  color: #42446e;
   text-align: center;
   font-size: 48px;
   font-weight: 700;
@@ -174,11 +172,12 @@ header img {
     padding-bottom: 24px;
   }
   .section-text h2 {
-    font-size: 28px;
+    font-size: 24px;
     padding-bottom: 8px;
   }
   .section-text p {
     font-size: 14px;
+    padding-bottom: 24px;
   }
 }
 /* 기술 섹션 */
@@ -192,7 +191,7 @@ header img {
 }
 
 #tech-stack {
-  padding-bottom: 300;
+  padding-bottom: 306px;
 }
 
 @media (max-width: 768px) {
@@ -203,6 +202,9 @@ header img {
   .tech-stacks img {
     width: 80px;
     height: 80px;
+  }
+  #tech-stack{
+    padding-bottom: 160px;
   }
 }
 
@@ -236,12 +238,12 @@ header img {
   gap: 24px;
 }
 .project-content h4 {
-  color: #42446e;
   font-size: 24px;
   font-weight: 700;
 }
 .project-link {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   gap: 40px;
 }
@@ -291,7 +293,15 @@ header img {
   font-weight: 400;
   line-height: 26px;
 }
-
+@media(max-width: 768px){
+    .project-items{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .project-content{
+        padding: 16px;
+    }
+}
 /* footer */
 footer {
 color: #889293;
@@ -300,6 +310,7 @@ color: #889293;
   gap: 52px;
   padding-bottom: 50px;
 }
+
 
 .footer-content {
   display: flex;
@@ -312,15 +323,14 @@ color: #889293;
 }
 
 .footer-logo {
-  width: 97px;
-  height: 59px;
+  width: 61px;
+  height: 61px;
 }
 
 .footer-contact {
   display: flex;
   gap: 40px;
   align-items: center;
-  color: #42446e;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -331,6 +341,28 @@ color: #889293;
   text-decoration: none;
 }
 
+@media(max-width:768px){
+    .footer{
+        gap:24px;
+    }
+    .footer-logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-contact .tel{
+        display: none;
+    }
+    .footer-contact{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
+    footer{
+        gap:24px;
+    }
+    
+}
 footer .footer-links {
   display: flex;
   gap: 20px;
@@ -342,7 +374,7 @@ footer .footer-links {
 }
 
 .madeby {
-  color: #666;
+  /* color: #666; */
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -354,4 +386,9 @@ footer .footer-links {
 background: linear-gradient(-30deg,#fd9f83, #fdb77d, #febe51);
   background-clip: text;
   color: transparent;
+}
+@media(max-width: 768px){
+    footer .br{
+        display: block;
+    }
 }
