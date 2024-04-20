@@ -114,9 +114,17 @@ header h1 {
 }
 
 header h1 span {
-  background: linear-gradient(90deg, #ac54f0e6 -2.06%, #fb8d6a 90%);
+  background: linear-gradient(-30deg,#fd9f83, #fdb77d, #febe51);
+  text-shadow: -20px 10px 8px #f6d7cd;
   background-clip: text;
   color: transparent;
+}
+
+header h1 span#header_txt{
+    background: linear-gradient(-30deg,#f98a68, #f5b987);
+    text-shadow: 1px 1px 1px #f9a88d;
+    background-clip: text;
+    color: transparent;
 }
 
 header img {
@@ -248,6 +256,25 @@ header img {
   font-weight: 400;
   line-height: 26px;
   text-decoration-line: underline;
+}
+
+.project-link a:focus{
+    font-weight: 500;
+    color: #889293;
+}
+.project-link a:hover{
+    font-weight: 700;
+    color: #666;
+}
+.project-link a:active{
+    font-weight: 700;
+    /* color: #fbc0ac; */
+    text-shadow: 1px 1px 1px #f9a88d;
+}
+.project-link a:active{
+    font-weight: 700;
+    /* color: #fbc0ac; */
+    /* text-shadow: 1px 1px 1px #f9a88d; */
 }
 .project-desc {
   color: #666;
